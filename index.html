@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blur Calculator</title>
+
+    <link rel="stylesheet" href="css/library/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/library/all.min.css" />
+    <link rel="stylesheet" href="css/library/normalize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+
+    <!-- Get Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Get Font  -->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="calculator p-3">
+        <input
+          type="text"
+          id="result"
+          class="result bg-white w-100 p-2 ps-3 border-0"
+          placeholder="0"
+          disabled
+        />
+        <div class="btns w-100 p-2">
+          <span data-type="clear">C</span>
+          <span data-type="remove1"
+            ><i class="fa-solid fa-delete-left"></i
+          ></span>
+          <span data-type="opretor" data-action="/">÷</span>
+          <span data-type="opretor" data-action="%">%</span>
+          <span data-type="number" data-action="7">7</span>
+          <span data-type="number" data-action="8">8</span>
+          <span data-type="number" data-action="9">9</span>
+          <span data-type="opretor" data-action="*">*</span>
+          <span data-type="number" data-action="4">4</span>
+          <span data-type="number" data-action="5">5</span>
+          <span data-type="number" data-action="6">6</span>
+          <span data-type="opretor" data-action="-">-</span>
+          <span data-type="number" data-action="1">1</span>
+          <span data-type="number" data-action="2">2</span>
+          <span data-type="number" data-action="3">3</span>
+          <span data-type="opretor" data-action="+">+</span>
+          <span></span>
+          <span data-type="number" data-action="0">0</span>
+          <span data-type="number" data-action=".">.</span>
+          <span data-type="result">=</span>
+        </div>
+      </div>
+    </div>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/libs/all.min.js"></script>
+    <script src="dist/index.js"></script>
+  </body>
+</html>

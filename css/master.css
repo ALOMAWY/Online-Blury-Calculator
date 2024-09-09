@@ -1,0 +1,102 @@
+@-webkit-keyframes pressed {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes pressed {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+body {
+  background-image: url(.././assets/images/wallpaperflare.com_wallpaper.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 25%;
+  margin: auto;
+}
+.container .calculator {
+  width: 100%;
+  border-radius: 40px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  -webkit-box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3098039216);
+          box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3098039216);
+  background-color: rgba(0, 0, 0, 0.226);
+}
+.container .calculator .result {
+  border-radius: 30px;
+  height: 50px;
+}
+.container .calculator .btns {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  gap: 10px;
+}
+.container .calculator .btns span {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  border-radius: 10px;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+.container .calculator .btns span:hover {
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+@media (max-width: 1310px) {
+  .container {
+    width: 40%;
+  }
+}
+@media (max-width: 610px) {
+  .container {
+    width: 80%;
+  }
+}

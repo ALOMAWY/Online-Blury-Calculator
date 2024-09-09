@@ -1,0 +1,67 @@
+@use "./pages/animations";
+body {
+  background-image: url(.././assets/images/wallpaperflare.com_wallpaper.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+  user-select: none;
+  box-sizing: border-box;
+}
+.container {
+  width: 25%;
+  margin: auto;
+  .calculator {
+    width: 100%;
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    // border: 1px solid white;
+    box-shadow: 0 0 10px 10px #0000004f;
+    background-color: rgba(0, 0, 0, 0.226);
+
+    .result {
+      border-radius: 30px;
+      height: 50px;
+    }
+
+    .btns {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+      gap: 10px;
+
+      span {
+        flex-basis: 25%;
+        border-radius: 10px;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.2rem;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.308);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1310px) {
+  .container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 610px) {
+  .container {
+    width: 80%;
+  }
+}

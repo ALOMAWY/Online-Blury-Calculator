@@ -1,0 +1,14 @@
+span {
+  //   animation: pressed 0.3s 1 ease-out;
+}
+
+@keyframes pressed {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
