@@ -14,7 +14,7 @@ let spans = Array.from(document.querySelectorAll(".btns span"));
 spans.forEach((e) => {
     e.addEventListener("click", () => {
         let span = e;
-        span.style.animation = " pressed 0.1s 1  ease-out";
+        span.style.animation = " pressed 0.1s 1 ease-out";
         setTimeout(() => {
             span.style.animation = "none";
         }, 100);

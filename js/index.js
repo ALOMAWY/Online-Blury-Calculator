@@ -13,7 +13,7 @@ var spans = Array.from(document.querySelectorAll(".btns span"));
 spans.forEach(function (e) {
   e.addEventListener("click", function () {
     var span = e;
-    span.style.animation = " pressed 0.1s 1  ease-out";
+    span.style.animation = " pressed 0.1s 1 ease-out";
     setTimeout(function () {
       span.style.animation = "none";
     }, 100);

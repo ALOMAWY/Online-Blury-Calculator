@@ -19,7 +19,7 @@ spans.forEach((e) => {
   e.addEventListener("click", () => {
     let span = e as HTMLElement;
 
-    span.style.animation = " pressed 0.1s 1  ease-out";
+    span.style.animation = " pressed 0.1s 1 ease-out";
     setTimeout(() => {
       span.style.animation = "none";
     }, 100);
