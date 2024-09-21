@@ -60,7 +60,7 @@ spans.forEach((e) => {
     } else if (span.dataset.type == "result") {
       let resultBarContent = resultBar?.value;
 
-      let result = `${eval(resultBarContent)}`;
+      let result = `${eval(resultBarContent) ? eval(resultBarContent) : "0"}`;
       if (resultBar) resultBar.value = result;
 
       localStorage.setItem("result", result);
